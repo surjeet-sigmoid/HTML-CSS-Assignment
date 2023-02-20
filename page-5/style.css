@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+}
+.row-num {
+  align-self: center;
+  font-size: 3rem;
+  margin-top: 3rem;
+}
+.first-container {
+  margin-top: 3rem;
+}
