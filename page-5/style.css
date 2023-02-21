@@ -18,4 +18,13 @@ body {
 }
 .first-container {
   margin-top: 3rem;
+  width: 65%;
+}
+.dropdown {
+  margin: 4rem 10rem 0 0;
+  display: grid;
+}
+.dropdown select {
+  min-height: 2.5rem;
+  border-color: #e9dede;
 }
