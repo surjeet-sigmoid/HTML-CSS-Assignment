@@ -17,17 +17,67 @@ body {
   margin-top: 3rem;
 }
 .first-container {
+  width: 80%;
   margin-top: 3rem;
-  width: 65%;
 }
-.dropdown {
-  margin: 4rem 10rem 0 0;
-  display: grid;
+
+.first-container .acc-body {
+  width: 98%;
+  width: 100%;
+  margin: 0 auto;
+  height: 0;
+  color: rgba(0, 0, 0, 0);
+  background-color: rgba(250, 248, 248, 0.2);
+  box-sizing: border-box;
+  transition: 0.5s;
+  border: 1px solid rgba(49, 117, 242, 0.15);
 }
-.dropdown select {
-  min-height: 2.5rem;
-  border-color: #e9dede;
+
+.first-container label {
+  cursor: pointer;
+  background-color: rgba(253, 252, 252, 0.1);
+  border-bottom: 1px solid rgba(49, 117, 242, 0.15);
+  display: block;
+  padding: 1rem;
+  width: 100%;
+  color: rgb(50, 42, 42);
+  font-weight: 400;
+  box-sizing: border-box;
+  z-index: 100;
 }
+
+.first-container input {
+  display: none;
+}
+
+.first-container label:before {
+  font-family: "FontAwesome";
+  content: "\f107";
+  font-weight: bolder;
+  float: right;
+}
+
+.first-container input:checked + label {
+  background-color: rgba(79, 191, 232, 0.15);
+  border: 1px solid rgba(28, 3, 255, 0.719);
+  color: rgba(28, 3, 255, 0.719);
+  font-weight: bolder;
+}
+
+.first-container input:checked + label:before {
+  font-family: "FontAwesome";
+  content: "\f106";
+  transition: 0.5s;
+}
+
+.first-container input:checked ~ .acc-body {
+  height: auto;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  padding: 20px;
+  transition: 0.5s;
+}
+
 /* 2nd container */
 .second-container {
   margin-top: 3rem;
@@ -66,4 +116,185 @@ body {
   height: fit-content;
   padding: 0.5rem 0.9rem;
   border-radius: 2rem;
+}
+.card {
+  width: 25rem;
+  height: auto;
+  border: 15px rgb(209, 204, 204) solid;
+  object-fit: cover;
+  align-items: center;
+  margin: 5rem 1rem;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5rem;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5rem;
+  color: rgb(137, 135, 135);
+}
+
+.card-react {
+  display: flex;
+  align-items: center;
+}
+
+.text-para {
+  padding: 5px 0;
+  color: rgb(138, 137, 137);
+}
+
+.card-image {
+  display: block;
+  width: 100%;
+  object-fit: contain;
+}
+
+.card-text {
+  margin: 0.3rem 0.4rem;
+}
+
+.hr-line {
+  margin: 2rem;
+  height: 3px;
+  background-color: #767474;
+}
+
+.single-select {
+  margin: 1rem;
+}
+
+.single-select-button {
+  margin: 1.5rem 0;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.option {
+  background-color: lightgray;
+  color: black;
+  border-radius: 30px;
+  padding: 0.5rem;
+  margin: 0.2rem;
+}
+
+input[type="radio"]:checked ~ .option {
+  background-color: rgb(15, 116, 216);
+  color: white;
+}
+
+.card-5-footer {
+  margin: 1rem;
+  padding-top: 1rem;
+}
+
+.card-5-header {
+  text-decoration: none;
+  font-weight: 900;
+}
+
+.fourth-container {
+  height: 40rem;
+  width: 70rem;
+  background-color: lightgray;
+  border: 1px solid;
+  box-shadow: 0.1rem 0.1rem;
+  margin: 1rem 0;
+  padding: 0.8rem 1rem;
+}
+
+.column-card {
+  display: grid;
+  text-align: center;
+  font-size: small;
+  height: 100%;
+  grid-template-columns: 5fr 5fr;
+}
+
+.card-left {
+  display: grid;
+  /* grid-gap: 0.1rem; */
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  padding: 8rem;
+  text-align: initial;
+}
+
+.input-field {
+  width: 100%;
+  height: 2rem;
+}
+
+.forgot-pwd {
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+}
+
+.remember-forgot {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sign-in-btn {
+  border-radius: 10px;
+  border: none;
+  color: white;
+  background-color: black;
+  margin: 1rem 0;
+}
+
+.sign-in-google-btn {
+  border-radius: 10px;
+  border: none;
+}
+
+.no-account {
+  text-align: center;
+  padding: 1rem;
+}
+
+.card-right {
+  background-image: url("./images/books.jpeg");
+  display: grid;
+  grid-template-rows: 3fr 3fr 3fr;
+}
+
+.bottom-card {
+  margin: 1rem;
+  background-color: rgb(255, 255, 255);
+  opacity: 0.6;
+  color: rgb(47, 47, 47);
+  text-align: initial;
+  padding: 1rem;
+}
+
+.bottom-card-footer {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.star-icon {
+  text-align: center;
+}
+
+.round-arrow-icon {
+  border-radius: 100%;
+  padding: inherit;
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid black;
+  background-color: white;
+  color: black;
 }

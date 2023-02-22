@@ -27,20 +27,35 @@
         <h1>1</h1>
       </div>
       <div class="first-container">
-        <div class="dropdown">
-          <select name="" id="">
-            <option value="">Accordion Item #1</option>
-            <option value="">Accordion Item #1a</option>
-          </select>
-          <select name="" id="">
-            <option value="">Accordion Item #2</option>
-            <option value="">Accordion Item #2a</option>
-          </select>
-          <select name="" id="">
-            <option value="">Accordion Item #2</option>
-            <option value="">Accordion Item #2a</option>
-          </select>
-        </div>
+        <div>
+          <input type="radio" name="acc" id="acc1" checked>
+          <label for="acc1">Accordion Item #1</label>
+          <div class="acc-body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+              et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+              aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+              culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+      </div>
+      <div>
+          <input type="radio" name="acc" id="acc2">
+          <label for="acc2">Accordion Item #2</label>
+          <div class="acc-body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+              et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+              aliquip ex ea commodo consequat.
+          </div>
+      </div>
+      <div>
+          <input type="radio" name="acc" id="acc3">
+          <label for="acc3">Accordion Item #3</label>
+          <div class="acc-body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+              et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+              aliquip ex ea commodo consequat.
+          </div>
+      </div>
       </div>
 
       <div class="row-num">
@@ -63,12 +78,121 @@
       <div class="row-num">
         <h1>3</h1>
       </div>
-      <div class="third-container"></div>
+      <div class="third-container card">
+        <div class="card-header">
 
-      <div class="row-num">
+            <div class="card-text">
+                <h1>Toothbrush</h1>
+            </div>
+
+            <div>
+                <h3>$4.50</h3>
+            </div>
+        </div>
+        <div class="card-text">
+            <p class="text-para">
+                Pinstriped cornflower blue cotton blouse takes you on a walk to the park or just down the hall.
+            </p>
+        </div>
+        <div class="single-select">
+            <hr class='hr-line' />
+            <h3>Select type</h3>
+            <div class="single-select-button">
+                <span>
+                    <input type="radio" name="optradio">
+                    <label class="option">
+                        Extra Soft
+                    </label>
+                </span>
+                <span>
+                    <input type="radio" name="optradio" checked>
+                    <label class="option">
+                        Soft
+                    </label>
+                </span>
+                <span>
+                    <input type="radio" name="optradio">
+                    <label class="option">
+                        Medium
+                    </label>
+                </span>
+                <span>
+                    <input type="radio" name="optradio">
+                    <label class="option">
+                        Hard
+                    </label>
+                </span>
+            </div>
+        </div>
+        <div class="card-5-footer">
+            <a href="#" class="card-5-header">ADD TO CART</a>
+        </div>
+    </div>
+    <div class="row-num">
         <h1>4</h1>
-      </div>
-      <div class="fourth-container"></div>
+    </div>
+    <div class="fourth-container">
+        <div class="column-card">
+            <div class="card-left">
+                <div>
+                    <h1>Welcome back</h1>
+                    <p>Welcome back! Please enter your details.</p>
+                </div>
+                <div>
+                    <label for="email">Email</label><br />
+                    <input class="input-field" type="email" name="email" id="email" required />
+                </div>
+                <div>
+                    <label for="passwordid">Password</label><br />
+                    <input class="input-field" type="password" name="password" id="passwordid" required />
+                </div>
+                <div class="remember-forgot">
+                    <div>
+                        <input type="checkbox" name="remember me" id="remember-me" />
+                        <label for="remember-me">Remember Me</label>
+                    </div>
+                    <div>
+                        <a class="forgot-pwd" href="#">Forget Password</a>
+                    </div>
+                </div>
+                <button class="sign-in-btn" type="submit">Sign in</button>
+                <button class="sign-in-google-btn" type="submit"><i class="fa fa-brand fa-google"></i> Sign in with
+                    Google</button>
+                <p class="no-account">Don't have an account? <a class="forgot-pwd" href="#">Signup for free</a></p>
+
+            </div>
+            <div class="card-right">
+                <div>
+                </div>
+                <div></div>
+                <div class="bottom-card">
+                    <h2>"We've been using untitled to kick start every new project and can't imagine working without
+                        it."</h2>
+                    <div class="bottom-card-footer">
+                        <div>
+                            <h2>Andi Lane</h2>
+                            <h4>Founder, Catalog</h4>
+                            <h4>Web Design Agency</h4>
+                        </div>
+                        <div>
+                            <div class="star-icon">
+                                <i class="fa fa-solid fa-star"></i>
+                                <i class="fa fa-solid fa-star"></i>
+                                <i class="fa fa-solid fa-star"></i>
+                                <i class="fa fa-solid fa-star"></i>
+                                <i class="fa fa-solid fa-star"></i>
+                            </div>
+                            <div>
+                                <button class="btn round-arrow-icon"><i class="fa fa-arrow-left"></i></button>
+                                <button class="btn round-arrow-icon"><i class="fa fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </div>
   </body>
 </html>
