@@ -74,15 +74,68 @@ body {
   grid-area: xs-3-4;
 }
 /* 3rd container */
-.third-container {
-  margin-top: 3rem;
-  display: flex;
-  gap: 1rem;
-}
-.third-container button {
-  padding: 0.5rem 1rem;
-  border-radius: 1rem;
+.btn {
+  /* background-color: DodgerBlue; */
   border: none;
+  color: white;
+  padding: 12px 12px;
+  font-size: 20px;
+  font-weight: 900;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0.5rem;
+}
+
+.btn-navigate {
+  border-radius: 80px;
+  color: black;
+  background-color: lightgray;
+}
+
+.btn-navigate span {
+  border-radius: 100%;
+  text-align: center;
+  padding: 0.4rem 0.5rem;
+}
+
+.primary {
+  background-color: rgb(53, 89, 232);
+  color: white;
+}
+
+.profile-icon {
+  background-color: rgb(142, 140, 140);
+  color: lightgray;
+}
+
+.profile-icon-primary {
+  background-color: rgb(122, 145, 234);
+}
+
+.secondary {
+  background-color: rgb(250, 75, 110);
+  color: white;
+}
+
+.profile-icon-secondary {
+  background-color: rgb(241, 136, 157);
+}
+
+.button-groups {
+  margin: 5rem 0;
+}
+
+.first-row-button .disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.second-row-button {
+  margin: 0 4rem;
+}
+
+.third-row-button {
+  margin: 0 17rem;
 }
 /* 4th container */
 .first-row {
